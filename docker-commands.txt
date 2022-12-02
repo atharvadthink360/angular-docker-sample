@@ -1,0 +1,11 @@
+Image Creation
+docker build -f Dockerfile.txt -t angular-app-image .
+
+List of Images
+docker image ls
+
+Container creation
+docker run --name angular-app-container -d -p 8888:80 angular-app-image
+
+List of containers
+docker container ls
